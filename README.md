@@ -1,4 +1,4 @@
-# Codespace
+# E-Commerce Project
 
 <h3>Vintique - Vintage Meets Unique</h3>
 
@@ -27,6 +27,10 @@ Our next steps involve enhancing the backend functionalities of our platform. We
 <h3>Database Schema and Website Architecture</h3>
 
 We have attached the database schema and website architecture documents for reference. These resources outline the structure and organization of our data as well as the overall layout and navigation flow of our website.
+<br>
+<img src="" alt="Website Architecture">
+<br>
+<img src="" alt="Database Scheme">
 
 <h3>Responsive Design</h3>
 
