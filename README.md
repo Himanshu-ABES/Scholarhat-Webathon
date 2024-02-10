@@ -28,9 +28,9 @@ Our next steps involve enhancing the backend functionalities of our platform. We
 
 We have attached the database schema and website architecture documents for reference. These resources outline the structure and organization of our data as well as the overall layout and navigation flow of our website.
 <br>
-<img src="" alt="Website Architecture">
+<img src="Database_Scheme.jpeg" alt="Website Architecture">
 <br>
-<img src="" alt="Database Scheme">
+<img src="Website_Architecture.jpeg" alt="Database Scheme">
 
 <h3>Responsive Design</h3>
 
