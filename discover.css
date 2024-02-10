@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body{
+    background: transparent;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 45px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 1.5s;
+}
+
+.header:hover{
+    background-color: white;
+    .navbar a{
+        color: black;
+    }
+}
+
+.navbar a{
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    border-bottom: 1px solid white;
+}
+
+.references h6{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.references a{
+    display: flex;
+    text-decoration: none;
+    line-height: 7px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.references p{
+    font-size: 14px;
+    color: white;
+}
+
+.contact h6{
+    font-size: 18px;
+    color: white;
+}
+
+.contact p{
+    font-size: 14px;
+    color: white;
+}
+
+.social h6{
+    font-size: 18px;
+    color: white;
+}
+
+.social a{
+    color: white;
+}
+
+.bottom{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    
+}
+.bar{
+    margin-top: 6%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+   
+}
+
+
+.footer{
+    margin-top: 5%;
+
+
+}
+
+.cont{
+    display: flex;
+}
+.right{
+    display: flex;
+
+}
+.cont1{
+    height: 10vh;
+}
+.img3{
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+}
