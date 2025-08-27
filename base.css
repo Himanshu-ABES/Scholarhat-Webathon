@@ -1,0 +1,223 @@
+/* Base CSS - Common styles for all pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Common Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 45px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.header:hover {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.header:hover .navbar a {
+    color: black;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/* Common Footer Styles */
+.footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    border-bottom: 1px solid white;
+}
+
+.references h6,
+.contact h6,
+.social h6 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.references a {
+    display: flex;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.references a:hover {
+    opacity: 0.7;
+}
+
+.references p,
+.contact p {
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+}
+
+.social a {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
+
+.bottom {
+    width: 100%;
+    padding: 15px 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+/* Common Card Styles */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Common Button Styles */
+.btn-primary {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.btn-outline:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .references a,
+    .contact p,
+    .social a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
