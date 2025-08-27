@@ -1,55 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', serif;
+/* Women's Store Page Specific Styles */
+
+body {
+    background: #fafafa;
 }
 
-body{
-    background: transparent;
+/* Override header for women's page - white background */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 45px;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.header:hover {
+    background: rgba(255, 255, 255, 1);
 }
 
-.navbar a{
-    font-size: 22px;
+.navbar a {
     color: black;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
 }
 
-.men-store h1{
-    margin: 80px 0px 0px 30px;
-    font-size: 48px;
+.header:hover .navbar a {
+    color: black;
 }
 
-.items-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
+/* Page Layout */
 .men-store {
     text-align: center;
     margin: 20px;
 }
 
+.men-store h1 {
+    margin: 80px 0px 30px 30px;
+    font-size: 48px;
+    color: #333;
+}
+
+/* Items Container */
 .items-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .item {
@@ -64,23 +55,77 @@ body{
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.item h5{
+.item img:hover {
+    transform: scale(1.05);
+}
+
+.item h5 {
     font-size: 18px;
     margin-top: 10px;
     color: #000000;
+    font-weight: 600;
 }
 
-.bottom{
-    padding: 5px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 14px;
-}
-
+/* Bootstrap Card Overrides for Consistency */
 .card {
-    margin-bottom: 20px; /* Add bottom margin to the cards */
-    border-radius: 17px;
+    border: none;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .men-store h1 {
+        font-size: 36px;
+        margin: 100px 15px 20px 15px;
+    }
+
+    .item {
+        width: calc(50% - 20px);
+    }
+
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .men-store h1 {
+        font-size: 28px;
+        margin: 100px 10px 20px 10px;
+    }
+
+    .item {
+        width: calc(100% - 20px);
+        max-width: 300px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .items-container {
+        padding: 10px;
+    }
 }
